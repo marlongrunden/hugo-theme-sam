@@ -24,7 +24,7 @@
     {{ $resized := .Resize $.Params.maxWidth }}
     {{ $linkname := trim .Name ".jpg" }}
     <div>
-        <a href="/{{ $linkname }}"> <img src="{{ $resized.RelPermalink }}" alt="{{ .Name }}" /></a>
+        <a href="/{{ $linkname }}" target="_blank"> <img src="{{ $resized.RelPermalink }}" alt="{{ .Name }}" /></a>
     </div>
     {{ end }}
 </div>
